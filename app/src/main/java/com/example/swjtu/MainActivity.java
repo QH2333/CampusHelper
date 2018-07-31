@@ -60,12 +60,15 @@ public class MainActivity extends AppCompatActivity implements affairsFragment.O
                 switch (menuItem.getItemId()){
                     case R.id.nav_affairs:
                         mDrawerLayout.closeDrawers();
+                        mViewPager.setCurrentItem(0);
                         break;
                     case R.id.nav_information:
                         mDrawerLayout.closeDrawers();
+                        mViewPager.setCurrentItem(1);
                         break;
                     case R.id.nav_market:
                         mDrawerLayout.closeDrawers();
+                        mViewPager.setCurrentItem(2);
                         break;
                     case R.id.nav_profile:
                         Intent intent_profile = new Intent(MainActivity.this,profileActivity.class);
@@ -104,12 +107,12 @@ public class MainActivity extends AppCompatActivity implements affairsFragment.O
         fragments.add(new affairsFragment());
         fragments.add(new infoFragment());
         fragments.add(new marketFragment());
-
+        //设置缓存的离屏Fragment为2个，避免重新加载
         mViewPager.setOffscreenPageLimit(2);
-
-        FragmentAdapter mFragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragments, titles);
-        mViewPager.setAdapter(mFragmentAdapter);
-        mTabLayout.setupWithViewPager(mViewPager);
+        //把各种东西都绑定起来
+        FragmentAdapter mFragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragments, titles);//将三个Fragment和对应的Title用适配器绑定起来
+        mViewPager.setAdapter(mFragmentAdapter);//让viewPager使用上面的适配器
+        mTabLayout.setupWithViewPager(mViewPager);//把Tab和viewPager也绑定起来
     }
 
 

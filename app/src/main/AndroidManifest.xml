@@ -54,11 +54,11 @@
         <activity
             android:name=".profileActivity"
             android:label="个人资料"
-            android:theme="@style/SettingsTheme"/>
+            android:theme="@style/SettingsTheme" />
         <activity
             android:name=".LoginActivity"
             android:label="登录"
-            android:theme="@style/LoginTheme"/>
+            android:theme="@style/LoginTheme" />
     </application>
 
 </manifest>
