@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.swjtu">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +10,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="校园通">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LivePayActivity"
+            android:theme="@style/SettingsTheme"/>
+        <activity android:name=".CardPayActivity"
+            android:theme="@style/SettingsTheme"/>
+        <activity android:name=".GradeActivity"
+            android:theme="@style/SettingsTheme"/>
+        <activity android:name=".LessonActivity"
+            android:theme="@style/SettingsTheme"/>
+        <activity android:name=".ELePayActivity"
+            android:theme="@style/SettingsTheme"/>
+        <activity android:name=".WaterPayActivity"
+            android:theme="@style/SettingsTheme"/>
     </application>
 
 </manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".affairsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="64dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_GradeSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="成绩查询 " />
+
+            <Button
+                android:id="@+id/btn_LessonSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="课程查询" />
+
+            <Button
+                android:id="@+id/btn_Payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="生活缴费" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
