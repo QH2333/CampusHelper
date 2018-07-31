@@ -1,5 +1,6 @@
 package com.example.swjtu;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -58,19 +59,29 @@ public class MainActivity extends AppCompatActivity implements affairsFragment.O
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.nav_affairs:
+                        mDrawerLayout.closeDrawers();
                         break;
                     case R.id.nav_information:
+                        mDrawerLayout.closeDrawers();
                         break;
                     case R.id.nav_market:
+                        mDrawerLayout.closeDrawers();
+                        break;
+                    case R.id.nav_profile:
+                        Intent intent_profile = new Intent(MainActivity.this,profileActivity.class);
+                        startActivity(intent_profile);
                         break;
                     case R.id.nav_settings:
+                        Intent intent_settings = new Intent(MainActivity.this,settingsActivity.class);
+                        startActivity(intent_settings);
                         break;
                     case R.id.nav_about:
+                        Intent intent_about = new Intent(MainActivity.this,AboutActivity.class);
+                        startActivity(intent_about);
                         break;
                     default:
                         break;
                 }
-                mDrawerLayout.closeDrawers();
                 return true;
             }
         });
@@ -133,8 +144,13 @@ public class MainActivity extends AppCompatActivity implements affairsFragment.O
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;
+            case R.id.but_Login:
+                Intent intent_login = new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(intent_login);
+                break;
             case R.id.but_About:
-                Toast.makeText(this,"You clicked About!", Toast.LENGTH_SHORT).show();
+                Intent intent_about = new Intent(MainActivity.this,AboutActivity.class);
+                startActivity(intent_about);
                 break;
             default:
                 break;

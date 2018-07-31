@@ -6,4 +6,5 @@
     <color name="colorTitle">#ffffff</color>
     <color name="colorTab">#ddffffff</color>
     <color name="colorTabSelected">#ffffff</color>
+    <color name="colorLoginAccent">#1976D2</color>
 </resources>

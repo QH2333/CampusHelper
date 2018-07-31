@@ -3,6 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/but_Login"
+        android:title="登录"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/but_About"
         android:title="关于"
         app:showAsAction="never"/>
