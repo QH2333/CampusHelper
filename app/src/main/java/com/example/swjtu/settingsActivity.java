@@ -1,9 +1,12 @@
 package com.example.swjtu;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class settingsActivity extends AppCompatActivity {
 
@@ -27,5 +30,30 @@ public class settingsActivity extends AppCompatActivity {
                 break;
         }
         return true;
+    }
+
+    public void data_usage(View view){
+        Toast.makeText(this,"当前使用流量：20KB！",Toast.LENGTH_SHORT).show();
+    }
+
+    public void clear_cache(View view){
+        Toast.makeText(this,"清理成功！",Toast.LENGTH_SHORT).show();
+    }
+
+    public void change_font(View view){
+        Toast.makeText(this,"功能正在开发！",Toast.LENGTH_SHORT).show();
+    }
+
+    public void auxiliary_functions(View view){
+        Toast.makeText(this,"功能正在开发！",Toast.LENGTH_SHORT).show();
+    }
+
+    public void change_account(View view){
+        Intent intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void exit_app(View view){
+        System.exit(0);
     }
 }
