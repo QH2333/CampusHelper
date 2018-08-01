@@ -26,4 +26,46 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SettingsTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorLoginAccent</item>
+    </style>
+
+    <style name="EleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#795548</item>
+        <item name="colorPrimaryDark">#6D4C41</item>
+        <item name="colorAccent">#3E2723</item>
+    </style>
+
+    <style name="WaterTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5C6BC0</item>
+        <item name="colorPrimaryDark">#3F51B5</item>
+        <item name="colorAccent">#1A237E</item>
+    </style>
+
+    <style name="OneCardTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00796B</item>
+        <item name="colorAccent">#004D40</item>
+    </style>
+
+    <style name="LessonTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorPrimaryDark">#D32F2F</item>
+        <item name="colorAccent">#B71C1C</item>
+    </style>
+
+    <style name="ScoreTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="colorPrimaryDark">#8E24AA</item>
+        <item name="colorAccent">#4A148C</item>
+    </style>
+
 </resources>

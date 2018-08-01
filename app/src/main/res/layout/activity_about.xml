@@ -6,60 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".AboutActivity">
 
-
-    <android.support.v7.widget.CardView
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/about1"
+        android:gravity="left"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="389dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="帮助"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/about1"
+        tools:layout_editor_absoluteX="16dp" />
 
-            <TextView
-                android:id="@+id/text_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="校园通"
-                android:textAlignment="center"
-                android:textSize="36sp" />
-
-            <TextView
-                android:id="@+id/text_version"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="alpha0.0.1"
-                android:textAlignment="center" />
-
-        </LinearLayout>
-
-    </android.support.v7.widget.CardView>
-
-    <LinearLayout
-        android:layout_width="368dp"
+    <Button
+        android:id="@+id/about2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="389dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:gravity="left"
+        android:text="反馈"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view10" />
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
 
-        <TextView
-            android:id="@+id/text_copyright"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Copyright©2018 SWJTU. All rights reserved."
-            android:textAlignment="center" />
-    </LinearLayout>
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/about2"
+        tools:layout_editor_absoluteX="16dp" />
+    <Button
+        android:id="@+id/about3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="更新日志"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
+    <View
+        android:id="@+id/view12"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/about3"
+        tools:layout_editor_absoluteX="16dp" />
+    <Button
+        android:id="@+id/about4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="关于我们"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+    <View
+        android:id="@+id/view13"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/about4"
+        tools:layout_editor_absoluteX="16dp" />
+
 
 </android.support.constraint.ConstraintLayout>

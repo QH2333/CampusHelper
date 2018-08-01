@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
 
 public class LivePayActivity extends AppCompatActivity {
 
@@ -17,22 +20,38 @@ public class LivePayActivity extends AppCompatActivity {
         if (actionBar != null){//如果获取到ActionBar，那么加一个返回按钮
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        Button btn_ele_top_up = (Button)findViewById(R.id.btn_ele_top_up);
+        Button btn_water_top_up = (Button)findViewById(R.id.btn_water_top_up);
+        Button btn_card_top_up = (Button)findViewById(R.id.btn_card_top_up);
+
+        btn_ele_top_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LivePayActivity.this,ELePayActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_water_top_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LivePayActivity.this,WaterPayActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_card_top_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LivePayActivity.this,CardPayActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
-    public void btnCardPay(View v1)
-    {
-        Intent CardPayintent=new Intent(this,CardPayActivity.class);
-        startActivity(CardPayintent);
-    }
-    public void PayEle(View v2)
-    {
-        Intent PayEleintent=new Intent(this,ELePayActivity.class);
-        startActivity(PayEleintent);
-    }
-    public void PayWater(View v3)
-    {
-        Intent PayWaterintent=new Intent(this,WaterPayActivity.class);
-        startActivity(PayWaterintent);
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

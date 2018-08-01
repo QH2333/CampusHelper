@@ -29,47 +29,14 @@
             android:contentDescription="@null"
             android:src="@drawable/material_design_3" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/iv_cover"
-            android:layout_margin="16dp"
-            android:text="微信公众号：安卓笔记侠"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/tv_content"
+        <Button
+            android:id="@+id/btn_payment"
+            style="?borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/iv_cover"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:lineSpacingMultiplier="1.2"
-            android:text="Android Developer's notes.\n和一个久经沙场的码农的喃喃自语。"
-            android:textColor="#757575"
-            android:textSize="14sp" />
-
-        <Button
-            android:id="@+id/btn_score_query"
-            style="?borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_content"
             android:background="@color/white"
-            android:text="SHARE"
-            android:textColor="#FF9800"
-            android:textSize="16sp" />
-
-        <Button
-            style="?borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/btn_score_query"
-            android:layout_toRightOf="@id/btn_score_query"
-            android:background="@color/white"
-            android:text="EXPLORE"
+            android:text="生活缴费"
             android:textColor="#FF9800"
             android:textSize="16sp" />
 

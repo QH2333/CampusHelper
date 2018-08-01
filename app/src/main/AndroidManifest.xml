@@ -27,22 +27,28 @@
         </activity>
         <activity
             android:name=".LivePayActivity"
-            android:theme="@style/SettingsTheme" />
+            android:label="生活缴费"
+            android:theme="@style/SettingsTheme2" />
         <activity
             android:name=".CardPayActivity"
-            android:theme="@style/SettingsTheme" />
+            android:label="一卡通充值"
+            android:theme="@style/OneCardTheme" />
         <activity
             android:name=".GradeActivity"
-            android:theme="@style/SettingsTheme" />
+            android:label="成绩查询"
+            android:theme="@style/ScoreTheme" />
         <activity
             android:name=".LessonActivity"
-            android:theme="@style/SettingsTheme" />
+            android:label="课程查询"
+            android:theme="@style/LessonTheme" />
         <activity
             android:name=".ELePayActivity"
-            android:theme="@style/SettingsTheme" />
+            android:label="电费充值"
+            android:theme="@style/EleTheme" />
         <activity
             android:name=".WaterPayActivity"
-            android:theme="@style/SettingsTheme" />
+            android:label="水卡充值"
+            android:theme="@style/WaterTheme" />
         <activity
             android:name=".AboutActivity"
             android:label="关于"
@@ -54,7 +60,7 @@
         <activity
             android:name=".profileActivity"
             android:label="个人资料"
-            android:theme="@style/SettingsTheme" />
+            android:theme="@style/LoginTheme" />
         <activity
             android:name=".LoginActivity"
             android:label="登录"

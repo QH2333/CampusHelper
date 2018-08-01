@@ -68,11 +68,11 @@ public class affairsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_affairs, container, false);
 
-        Button button1 = (Button)view.findViewById(R.id.btn_GradeSearch);
-        Button button2 = (Button)view.findViewById(R.id.btn_LessonSearch);
-        Button button3 = (Button)view.findViewById(R.id.btn_Payment);
+        Button btn_score_query = (Button)view.findViewById(R.id.btn_score_query);
+        Button btn_lesson_query = (Button)view.findViewById(R.id.btn_lesson_query);
+        Button btn_payment = (Button)view.findViewById(R.id.btn_payment);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        btn_score_query.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),GradeActivity.class);
@@ -80,7 +80,7 @@ public class affairsFragment extends Fragment {
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        btn_lesson_query.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),LessonActivity.class);
@@ -88,7 +88,7 @@ public class affairsFragment extends Fragment {
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        btn_payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),LivePayActivity.class);

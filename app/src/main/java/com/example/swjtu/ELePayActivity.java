@@ -4,8 +4,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class ELePayActivity extends AppCompatActivity {
 
@@ -18,20 +21,28 @@ public class ELePayActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
+        Button btn_ele_pay = (Button)findViewById(R.id.btn_ele_pay);
+
+        btn_ele_pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ELePayActivity.this,"缴费成功！",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         String[] strBuilding = new String[]{"请选择楼栋", "天佑斋19栋", "天佑斋20栋", "其他"};
-        ArrayAdapter<String> Buidingadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, strBuilding);  //创建一个数组适配器
-        Buidingadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     //设置下拉列表框的下拉选项样式
+        ArrayAdapter<String> adapter_building = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, strBuilding);  //创建一个数组适配器
+        adapter_building.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     //设置下拉列表框的下拉选项样式
 
-        Spinner Buildingspinner = super.findViewById(R.id.spnerBuilding);
-        Buildingspinner.setAdapter(Buidingadapter);
+        Spinner spinner_building = super.findViewById(R.id.spinner_building);
+        spinner_building.setAdapter(adapter_building);
 
         String[] strDorm = new String[]{"请选择寝室号", "4050", "4060", "4070", "其他"};
-        ArrayAdapter<String> Dormadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, strDorm);  //创建一个数组适配器
-        Dormadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     //设置下拉列表框的下拉选项样式
+        ArrayAdapter<String> adapter_dorm = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, strDorm);  //创建一个数组适配器
+        adapter_dorm.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     //设置下拉列表框的下拉选项样式
 
-        Spinner Dormspinner = super.findViewById(R.id.spnerDorm);
-        Dormspinner.setAdapter(Dormadapter);
+        Spinner spinner_dorm = super.findViewById(R.id.spinner_dorm);
+        spinner_dorm.setAdapter(adapter_dorm);
     }
 
     @Override

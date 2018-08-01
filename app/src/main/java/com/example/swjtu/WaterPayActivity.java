@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class WaterPayActivity extends AppCompatActivity {
@@ -17,6 +19,14 @@ public class WaterPayActivity extends AppCompatActivity {
         if (actionBar != null){//如果获取到ActionBar，那么加一个返回按钮
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+        Button btn_water_pay = (Button)findViewById(R.id.btn_water_pay);
+
+        btn_water_pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(WaterPayActivity.this,"缴费成功！",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

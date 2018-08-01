@@ -4,8 +4,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class LessonActivity extends AppCompatActivity {
 
@@ -17,6 +20,15 @@ public class LessonActivity extends AppCompatActivity {
         if (actionBar != null){//如果获取到ActionBar，那么加一个返回按钮
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        Button btn_lesson_query2 = (Button)findViewById(R.id.btn_lesson_query2);
+
+        btn_lesson_query2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(LessonActivity.this,"该课程上课时间为：周一第一讲！",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         String[] strGrade = new String[]{"请选择年级", "大一", "大二", "大三", "大四"};
         ArrayAdapter<String> Gradeadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, strGrade);  //创建一个数组适配器

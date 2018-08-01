@@ -17,29 +17,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="8dp">
 
-
-            <Button
-                android:id="@+id/btn_GradeSearch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="成绩查询 " />
-
-            <Button
-                android:id="@+id/btn_LessonSearch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="课程查询" />
-
-            <Button
-                android:id="@+id/btn_Payment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="生活缴费" />
 
             <include
-                layout="@layout/card_template"
+                layout="@layout/card_info_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/card_payment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
