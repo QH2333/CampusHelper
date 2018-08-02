@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".helpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/help1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="如何注册，登录校园通？"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/help2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="如何注册？"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/help3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="校园通是一个学生创建的app，连接了学校的教务网，所以可以在此app上学要使用教务网的账户和密码。"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/help4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="如何登陆？"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/help5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="校园通app使用的是教务网的账号体系，可以直接使用教务网的账号密码进行登陆，或者以游客的身份进行部分页面的浏览。"
+            android:textColor="#000000" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/update1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="校园通APP1.0主要更新"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/update2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018年08月01日"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/update3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="优化了ui设计"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/view14"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#000000"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

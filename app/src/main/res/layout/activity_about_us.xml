@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about_usActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/us1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="         校园通创立之初，我们苦于学校网上办事功能和渠道的分散在教务、微信、QQ等各种平台，给我们学生带来了诸多不利。于是我们创建了这个APP，旨在将常用的校园事务办理集为一体，做到”一个APP，搞定校内所有问题“。我们衷心的希望这款APP能给同学们带来方便，祝所有用户使用愉快！"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/us2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="官方网站：暂无"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/us3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="官方微博：暂无"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/us4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="官方微信：暂无"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/us5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="官方QQ群：暂无"
+            android:textColor="#000000" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
