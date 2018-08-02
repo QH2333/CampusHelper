@@ -46,7 +46,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="请输入课程"
-                android:inputType="number" />
+                android:inputType="text|number" />
         </android.support.design.widget.TextInputLayout>
 
         <Button

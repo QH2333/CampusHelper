@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WaterPayActivity"
-    android:background="@drawable/material_design_11">
+    android:background="@drawable/material_design_5">
 
 
     <include

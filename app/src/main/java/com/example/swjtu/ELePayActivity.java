@@ -30,7 +30,7 @@ public class ELePayActivity extends AppCompatActivity {
             }
         });
 
-        String[] strBuilding = new String[]{"请选择楼栋", "天佑斋19栋", "天佑斋20栋", "其他"};
+        String[] strBuilding = new String[]{"请选择楼栋", "天佑斋1栋", "天佑斋2栋", "天佑斋3栋", "天佑斋4栋", "天佑斋5栋", "天佑斋6栋", "天佑斋7栋", "天佑斋8栋", "天佑斋9栋", "天佑斋10栋", "天佑斋11栋", "天佑斋12栋", "天佑斋13栋", "天佑斋14栋", "天佑斋15栋", "天佑斋16栋", "天佑斋17栋", "天佑斋18栋", "天佑斋19栋", "天佑斋20栋", "其他"};
         ArrayAdapter<String> adapter_building = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, strBuilding);  //创建一个数组适配器
         adapter_building.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     //设置下拉列表框的下拉选项样式
 

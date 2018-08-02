@@ -1,20 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin">
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="193dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="143dp"
+                        android:layout_height="175dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:maxLines="10"
+                        android:text="          学弟学妹们，救救老学长，由于在喝的烂醉丢了钱包手机身份证，已经没有钱来支付回家的共享单车费用，珍藏多年的纪念品限时出售，价格好说，想要就我的学弟学妹赶紧打电话或发QQ都可以。138xxxxxxxx" />
+
+                    <Button
+                        android:id="@+id/btn_market1_add"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="加入购物车"
+                        android:textColor="#FFC400" />
+
+                    <Button
+                        android:id="@+id/btn_market1_detail"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/btn_market1_add"
+                        android:text="查看详情"
+                        android:textColor="#FFC400" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="179dp"
+                        android:layout_height="126dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/phototwo" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="193dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="140dp"
+                        android:layout_height="158dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="7dp"
+                        android:ellipsize="end"
+                        android:maxLines="10"
+                        android:text="          失散多年的女朋友回来了，这种东西已经不敢入她法眼，现在低价出售（100元），想要的赶紧联系我。还送鼠标垫以及香烟啤酒八宝粥，电话：155xxxxxxxx" />
+
+                    <Button
+                        android:id="@+id/btn_market2_add"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="加入购物车"
+                        android:textColor="#FFC400" />
+
+                    <Button
+                        android:id="@+id/btn_market2_detail"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/btn_market2_add"
+                        android:text="查看详情"
+                        android:textColor="#FFC400" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="177dp"
+                        android:layout_height="122dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/photoone" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="193dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="140dp"
+                        android:layout_height="149dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="10"
+                        android:text="          本人养的一只猫，由于要出国学习，不能带在身边，现在愿意送给爱猫人士，最好是小姐姐哦，因为小姐姐会照顾好它的，喜欢的话联系我哦，微信：astudygirl" />
+
+                    <Button
+                        android:id="@+id/btn_market3_add"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="加入购物车"
+                        android:textColor="#FFC400" />
+
+                    <Button
+                        android:id="@+id/btn_market3_detail"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/btn_market3_add"
+                        android:text="查看详情"
+                        android:textColor="#FFC400" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="175dp"
+                        android:layout_height="117dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/photo" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="193dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="133dp"
+                        android:layout_height="151dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="9dp"
+                        android:ellipsize="end"
+                        android:maxLines="10"
+                        android:text="          本人自主创业，身为交大学生，希望能够让更多的人爱上交大，现有精美校徽出售，每人限购两枚，想要的同学可以联系我们哦，交大校内免费配送。电话：155xxxxxxxx" />
+
+                    <Button
+                        android:id="@+id/btn_market4_add"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="加入购物车"
+                        android:textColor="#FFC400" />
+
+                    <Button
+                        android:id="@+id/btn_market4_detail"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/btn_market4_add"
+                        android:text="查看详情"
+                        android:textColor="#FFC400" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="180dp"
+                        android:layout_height="125dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/photothree" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

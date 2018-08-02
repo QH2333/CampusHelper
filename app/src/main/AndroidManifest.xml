@@ -65,6 +65,35 @@
             android:name=".LoginActivity"
             android:label="登录"
             android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".market1Activity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".market2Activity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".market3Activity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".market4Activity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".helpActivity"
+            android:label="帮助"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name=".feedbackActivity"
+            android:label="反馈"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name=".updateActivity"
+            android:label="更新日志"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name=".about_usActivity"
+            android:label="关于我们"
+            android:theme="@style/SettingsTheme" />
+
     </application>
 
 </manifest>

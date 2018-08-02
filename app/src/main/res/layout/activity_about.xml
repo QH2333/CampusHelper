@@ -15,15 +15,18 @@
         android:text="帮助"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="get_help"/>
+
     <View
         android:id="@+id/view10"
         android:layout_width="match_parent"
         android:layout_height="2px"
 
         android:background="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/about1"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about1" />
 
     <Button
         android:id="@+id/about2"
@@ -34,15 +37,17 @@
         android:text="反馈"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view10" />
+        app:layout_constraintTop_toTopOf="@+id/view10"
+        android:onClick="send_feedback"/>
+
     <View
         android:id="@+id/view11"
         android:layout_width="match_parent"
         android:layout_height="2px"
 
         android:background="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/about2"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about2" />
     <Button
         android:id="@+id/about3"
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -52,15 +57,18 @@
         android:text="更新日志"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view11" />
+        app:layout_constraintTop_toTopOf="@+id/view11"
+        android:onClick="check_update"/>
+
     <View
         android:id="@+id/view12"
         android:layout_width="match_parent"
         android:layout_height="2px"
 
         android:background="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/about3"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about3" />
     <Button
         android:id="@+id/about4"
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -70,15 +78,18 @@
         android:text="关于我们"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view12" />
+        app:layout_constraintTop_toTopOf="@+id/view12"
+        android:onClick="about_us"/>
+
     <View
         android:id="@+id/view13"
         android:layout_width="match_parent"
         android:layout_height="2px"
 
         android:background="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/about4"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about4" />
 
 
 </android.support.constraint.ConstraintLayout>

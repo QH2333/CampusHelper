@@ -23,14 +23,14 @@
         android:orientation="vertical">
 
         <Spinner
-            android:id="@+id/spinner_dorm"
+            android:id="@+id/spinner_building"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Spinner
-            android:id="@+id/spinner_building"
+            android:id="@+id/spinner_dorm"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             app:layout_constraintEnd_toEndOf="parent"

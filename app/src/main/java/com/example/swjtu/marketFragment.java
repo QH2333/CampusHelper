@@ -1,12 +1,14 @@
 package com.example.swjtu;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -64,7 +66,47 @@ public class marketFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_market, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_market, container, false);
+
+        Button btn_card_main1_action2 = (Button)view.findViewById(R.id.btn_market1_detail);
+        Button btn_card_main1_action4 = (Button)view.findViewById(R.id.btn_market2_detail);
+        Button btn_card_main1_action6 = (Button)view.findViewById(R.id.btn_market3_detail);
+        Button btn_card_main1_action8 = (Button)view.findViewById(R.id.btn_market4_detail);
+
+        btn_card_main1_action2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),market1Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_card_main1_action4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),market2Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_card_main1_action6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),market3Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_card_main1_action8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),market4Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

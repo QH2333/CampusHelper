@@ -46,7 +46,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="请输入姓名"
-                android:inputType="number" />
+                android:inputType="text" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout

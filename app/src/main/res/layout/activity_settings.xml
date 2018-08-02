@@ -44,7 +44,9 @@
         android:text="流量统计"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:onClick="data_usage"/>
+
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
@@ -94,7 +96,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        android:onClick="clear_cache"/>
     <View
         android:id="@+id/view4"
         android:layout_width="match_parent"
@@ -141,7 +144,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view5" />
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        android:onClick="change_font"/>
     <View
         android:id="@+id/view6"
         android:layout_width="match_parent"
@@ -160,7 +164,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view6" />
+        app:layout_constraintTop_toTopOf="@+id/view6"
+        android:onClick="auxiliary_functions"/>
     <View
         android:id="@+id/view7"
         android:layout_width="match_parent"
@@ -179,7 +184,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view7" />
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        android:onClick="change_account"/>
     <View
         android:id="@+id/view8"
         android:layout_width="match_parent"
@@ -198,7 +204,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view8" />
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        android:onClick="exit_app"/>
     <View
         android:id="@+id/view9"
         android:layout_width="match_parent"
